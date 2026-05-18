@@ -3,233 +3,217 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Maphonga Pty Ltd | Custom Printing</title>
-
 <link rel="stylesheet" href="styles.css">
-
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
 <!-- ===== HEADER ===== -->
-<header>
+<header id="header">
+  <div class="logo">Maphonga<span>.</span></div>
 
-<div class="logo">Maphonga Pty Ltd</div>
+  <nav>
+    <ul id="navMenu">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#services" class="nav-link">Services</a></li>
+      <li><a href="#gallery" class="nav-link">Gallery</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
 
-<nav>
-<ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#gallery">Gallery</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
-
+  <button class="burger" id="burger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
 </header>
+
+<!-- Mobile overlay -->
+<div class="nav-overlay" id="navOverlay"></div>
 
 <!-- ===== HERO ===== -->
 <section class="hero" id="home">
-
-<div class="hero-content">
-
-<h1>Premium Custom Printing for Businesses, Brands & Individuals</h1>
-
-<p>
-From T-Shirts and Hoodies to Caps, Mugs,and Personalized Products, <br>
-we turn your ideas into professional designs that stand out.
-</p>
-
-<a href="https://wa.me/27824591692?text=Hello%20Maphonga%20Pty%20Ltd,%20I%20would%20like%20to%20place%20an%20order."
-class="btn" target="_blank">
-Order Now
-</a>
-
-</div>
-
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <p class="hero-tag reveal">— Premium Custom Printing —</p>
+    <h1 class="reveal">Your Brand.<br>Our <span>Craft.</span></h1>
+    <p class="hero-sub reveal">T-Shirts · Hoodies · Caps · Mugs · Uniforms<br>We turn your ideas into designs that stand out.</p>
+    <a href="https://wa.me/27824591692?text=Hello%20Maphonga%20Pty%20Ltd,%20I%20would%20like%20to%20place%20an%20order." class="btn reveal" target="_blank">
+      <span>Order Now</span>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+  <div class="hero-badge">
+    <span>Est.</span>
+    <strong>2020</strong>
+  </div>
 </section>
 
 <!-- ===== ABOUT ===== -->
 <section class="about" id="about">
-
-<h2>About Maphonga Pty Ltd</h2>
-
-<p>
-Maphonga Pty Ltd is a professional custom printing company
-specializing in high-quality t-shirt printing, hoodie printing,
-branding and personalized products.
-</p>
-
+  <div class="about-inner">
+    <div class="section-label">Who We Are</div>
+    <h2 class="reveal">Built on quality.<br>Driven by <span>passion.</span></h2>
+    <p class="reveal">Maphonga Pty Ltd is a professional custom printing company specializing in high-quality t-shirt printing, hoodie printing, branding and personalized products. We serve businesses, brands and individuals across South Africa.</p>
+    <div class="stats reveal">
+      <div class="stat"><strong>500+</strong><span>Happy Clients</span></div>
+      <div class="stat"><strong>5+</strong><span>Years Experience</span></div>
+      <div class="stat"><strong>2</strong><span>Branches</span></div>
+    </div>
+  </div>
 </section>
 
 <!-- ===== SERVICES ===== -->
 <section class="services" id="services">
+  <div class="section-label">What We Offer</div>
+  <h2 class="reveal">Our Services</h2>
+  <div class="service-container">
 
-<h2>Our Services</h2>
+    <div class="card reveal">
+      <div class="image-box">
+        <img src="images/blues.jpeg" alt="T-Shirt Printing">
+        <div class="card-overlay"></div>
+      </div>
+      <div class="card-content">
+        <div class="card-icon">👕</div>
+        <h3>T-Shirt Printing</h3>
+        <p>Modern and stylish custom t-shirt printing for brands, events and businesses.</p>
+        <div class="price-tag">R300 – R450</div>
+      </div>
+    </div>
 
-<div class="service-container">
+    <div class="card reveal">
+      <div class="image-box">
+        <img src="images/reds.jpeg" alt="Hoodie Printing">
+        <div class="card-overlay"></div>
+      </div>
+      <div class="card-content">
+        <div class="card-icon">🧥</div>
+        <h3>Hoodie Printing</h3>
+        <p>Premium hoodie branding with quality and durable printing designs.</p>
+        <div class="price-tag">R450 – R600</div>
+      </div>
+    </div>
 
-<div class="card">
+    <div class="card reveal">
+      <div class="image-box">
+        <img src="images/cup.jpeg" alt="Custom Products">
+        <div class="card-overlay"></div>
+      </div>
+      <div class="card-content">
+        <div class="card-icon">🎁</div>
+        <h3>Custom Products</h3>
+        <p>Mugs, caps, bags, uniforms and many custom promotional products.</p>
+        <div class="price-tag">Cups R120–R250 &nbsp;|&nbsp; Caps R180–R250</div>
+      </div>
+    </div>
 
-<div class="image-box">
-<img src="images/blues.jpeg" alt="T-Shirt Printing">
-</div>
-
-<div class="card-content">
-<h3>T-Shirt Printing</h3>
-
-<p>
-Modern and stylish custom t-shirt printing
-for brands, events and businesses.
-  <br><strong>Prices: R300 to R450 with printed messages</strong>
-</p>
-</div>
-
-</div>
-
-<div class="card">
-
-<div class="image-box">
-<img src="images/reds.jpeg" alt="Hoodie Printing">
-</div>
-
-<div class="card-content">
-<h3>Hoodie Printing</h3>
-
-<p>
-Premium hoodie branding with quality and
-durable printing designs.
-  <br><strong>Prices: R450 to R600</strong>
-</p>
-</div>
-
-</div>
-
-<div class="card">
-
-<div class="image-box">
-<img src="images/cup.jpeg" alt="Custom Products">
-</div>
-
-<div class="card-content">
-<h3>Custom Products</h3>
-
-<p>
-We print mugs, caps, bags, uniforms
-and many custom promotional products.
-  <br><strong>Cups: R120 to R250</strong>
-<br><strong>Caps and hats: R180 to R250</strong>
-</p>
-</div>
-
-</div>
-
-</div>
-
+  </div>
 </section>
 
 <!-- ===== GALLERY ===== -->
 <section class="gallery" id="gallery">
-
-<h2>Our Work Gallery</h2>
-
-<div class="gallery-grid">
-
-<div class="gallery-item">
-<img src="images/blues.jpeg" alt="Company Picture">
-</div>
-
-<div class="gallery-item">
-<img src="images/whitea.jpeg" alt="Blue Printing">
-</div>
-
-<div class="gallery-item">
-<img src="images/cups.jpeg" alt="Blue Shirt">
-</div>
-
-<div class="gallery-item">
-<img src="images/cup.jpeg" alt="Cup Printing">
-</div>
-
-<div class="gallery-item">
-<img src="images/bluess.jpeg"White Shirt">
-</div>
-
-<div class="gallery-item">
-<img src="images/whites.jpeg" alt="Company Logo">
-</div>
-
-</div>
-
+  <div class="section-label">Our Portfolio</div>
+  <h2 class="reveal">Work Gallery</h2>
+  <div class="gallery-grid">
+    <div class="gallery-item reveal"><img src="images/blues.jpeg" alt="Company Picture"><div class="gallery-hover"><span>View</span></div></div>
+    <div class="gallery-item reveal"><img src="images/whitea.jpeg" alt="White Print"><div class="gallery-hover"><span>View</span></div></div>
+    <div class="gallery-item reveal"><img src="images/cups.jpeg" alt="Cups"><div class="gallery-hover"><span>View</span></div></div>
+    <div class="gallery-item reveal"><img src="images/cup.jpeg" alt="Cup Printing"><div class="gallery-hover"><span>View</span></div></div>
+    <div class="gallery-item reveal"><img src="images/bluess.jpeg" alt="Blue Shirt"><div class="gallery-hover"><span>View</span></div></div>
+    <div class="gallery-item reveal"><img src="images/whites.jpeg" alt="White Shirt"><div class="gallery-hover"><span>View</span></div></div>
+  </div>
 </section>
 
 <!-- ===== CONTACT ===== -->
 <section class="contact" id="contact">
+  <div class="section-label light">Get In Touch</div>
+  <h2 class="reveal">Contact Us</h2>
+  <div class="contact-container">
 
-<h2>Contact Us</h2>
+    <div class="contact-box reveal">
+      <div class="contact-icon">📍</div>
+      <h3>Gauteng Branch</h3>
+      <p>171 Quatemala Street, 4365</p>
+      <p>Cosmo City, Randburg</p>
+      <p>2188</p>
+    </div>
 
-<div class="contact-container">
+    <div class="contact-box reveal">
+      <div class="contact-icon">📍</div>
+      <h3>Limpopo Branch</h3>
+      <p>Ipelegeng Ext 2</p>
+      <p>House No 12</p>
+      <p>Thabazimbi, 0380</p>
+    </div>
 
-<div class="contact-box">
+    <div class="contact-box reveal highlight-box">
+      <div class="contact-icon">💬</div>
+      <h3>Business Contact</h3>
+      <p>kholofelomaphoru89@gmail.com</p>
+      <p>082 459 1692</p>
+      <a href="https://wa.me/27824591692?text=Hello%20Maphonga%20Pty%20Ltd,%20I%20would%20like%20to%20place%20an%20order." class="btn btn-wa" target="_blank">
+        <span>Order On WhatsApp</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.532 5.849L.057 23.535a.75.75 0 00.908.908l5.686-1.475A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.704 9.704 0 01-4.95-1.355l-.355-.212-3.676.954.975-3.563-.232-.368A9.712 9.712 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+      </a>
+    </div>
 
-<h3>Gauteng Branch</h3>
-
-<p>Cosmo City</p>
-<p>171 Quatemala Street,4365</p>
-<p>Randburg</p>
-<p>2188</p>
-
-</div>
-
-<div class="contact-box">
-
-<h3>Limpopo Branch</h3>
-
-<p>Thabazimbi</p>
-<p>Ipelegeng Ext 2</p>
-<p>House No 12</p>
-<p>0380</p>
-
-
-</div>
-
-<div class="contact-box">
-
-<h3>Business Contact</h3>
-
-<p>Email:</p>
-<p>kholofelomaphoru89@gmail.com</p>
-<p>Phone / WhatsApp:</p>
-<p>082 459 1692</p>
-
-<br>
-
-<a href="https://wa.me/27824591692?text=Hello%20Maphonga%20Pty%20Ltd,%20I%20would%20like%20to%20place%20an%20order."
-class="btn" target="_blank">
-Order On WhatsApp
-</a>
-
-</div>
-
-</div>
-
+  </div>
 </section>
 
 <!-- ===== FOOTER ===== -->
 <footer>
-
-<p>
-Maphonga Pty Ltd | All Rights Reserved
-</p>
-
+  <div class="footer-inner">
+    <div class="logo">Maphonga<span>.</span></div>
+    <p>© 2026 Maphonga Pty Ltd · All Rights Reserved</p>
+  </div>
 </footer>
 
-<!-- ===== FLOATING WHATSAPP BUTTON ===== -->
-<a href="https://wa.me/27824591692?text=Hello%20Maphonga%20Pty%20Ltd,%20I%20would%20like%20to%20place%20an%20order."
-class="whatsapp-btn" target="_blank">
-WhatsApp Order
+<!-- ===== FLOATING WHATSAPP ===== -->
+<a href="https://wa.me/27824591692?text=Hello%20Maphonga%20Pty%20Ltd,%20I%20would%20like%20to%20place%20an%20order." class="whatsapp-float" target="_blank" aria-label="WhatsApp Order">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.532 5.849L.057 23.535a.75.75 0 00.908.908l5.686-1.475A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.704 9.704 0 01-4.95-1.355l-.355-.212-3.676.954.975-3.563-.232-.368A9.712 9.712 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+  <span class="pulse-ring"></span>
 </a>
 
+<script>
+// ── Burger menu ──
+const burger = document.getElementById('burger');
+const navMenu = document.getElementById('navMenu');
+const overlay = document.getElementById('navOverlay');
+
+burger.addEventListener('click', () => {
+  burger.classList.toggle('open');
+  navMenu.classList.toggle('open');
+  overlay.classList.toggle('open');
+  document.body.classList.toggle('no-scroll');
+});
+
+overlay.addEventListener('click', closeMenu);
+navMenu.querySelectorAll('a').forEach(l => l.addEventListener('click', closeMenu));
+
+function closeMenu() {
+  burger.classList.remove('open');
+  navMenu.classList.remove('open');
+  overlay.classList.remove('open');
+  document.body.classList.remove('no-scroll');
+}
+
+// ── Sticky header shadow ──
+window.addEventListener('scroll', () => {
+  document.getElementById('header').classList.toggle('scrolled', window.scrollY > 50);
+});
+
+// ── Scroll reveal ──
+const reveals = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => entry.target.classList.add('visible'), i * 80);
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+reveals.forEach(el => observer.observe(el));
+</script>
 </body>
 </html>
